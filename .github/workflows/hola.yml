@@ -1,0 +1,15 @@
+name: Hola Pipeline
+on:
+  push:
+    branches: [main]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bienvenida
+        run: |
+          echo "¡Hola DevOps!"
+          echo "Esta es mi primera pipeline"
+          date
+          uname -a
